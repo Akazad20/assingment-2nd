@@ -153,8 +153,41 @@ nav{
 .bannar-img{
     width: 50%;
 }
+/* online-game */
+.online-game{
+    padding:30px 90px;
+}
+.main-contain-game{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
 
-
+}
+.imag-one{
+    position: relative;
+}
+.port-overly{
+    width: 100%;
+    height: 99%;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    color: #fff;
+    opacity:0;
+    transition: 0.4s;
+    border-radius: 13px;
+    border:none;
+    font-size: 20px;
+   
+}
+.imag-one .port-overly:hover{
+    opacity: 1;
+}
 
 
 /* responsive desing  */
@@ -192,7 +225,14 @@ nav{
            margin:29px auto;
        }
        .btn-secned{
-           padding:12px 30px;
+           padding:12px 15px;
+           margin:5px;
+       }
+       .online-game{
+           padding: 20px;
+       }
+       .main-contain-game{
+           grid-template-columns: 1fr;
        }
 }
 @media screen and (min-width:570px) and (max-width:768px) {
@@ -227,6 +267,12 @@ nav{
     .bannar-title{
        text-align: justify;
         margin: 15px auto;
+    }
+    .online-game{
+        padding:20px;
+    }
+    .main-contain-game{
+        grid-template-columns: repeat(2,1fr);
     }
 }
 @media screen and (min-width:768px) and (max-width:990px){
