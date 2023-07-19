@@ -31,15 +31,14 @@ a{
 
 /* style main part */
 nav{
-    padding:30px 90px;
+    padding:10px 90px;
 
 }
-.logo{
-    display: flex;
-   
-}
+
 .img-tit{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .img-tit{
     font-weight: 700;
@@ -70,8 +69,8 @@ nav{
 }
 .menus ul li{
     margin-right: 30px;
-    padding: 10px;
-    font-size: 2em;
+    padding: 8px;
+    font-size: 1.5rem;
     line-height: 30px;
 }
 .menus ul li a{
@@ -80,7 +79,22 @@ nav{
     color:var(--paimary-color)
 }
 
-
+/* bananar part */
+.bannar{
+    padding:0px 90px;
+}
+.main-bannar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bannar-title{
+    background-image: url("../images/Group\ 14.png");
+   
+}
+.bannar-img{
+    width: 50%;
+}
 
 
 
