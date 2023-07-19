@@ -163,6 +163,36 @@ nav{
     column-gap:20px;
 
 }
+.game-title{
+     margin: auto;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.game-title h1{
+    color: #534C64;
+    text-align:center;
+    font-family: Work Sans;
+   text-transform: capitalize;
+    font-weight: 800;
+    font-size: 2.5em; 
+    margin-bottom: 15px;
+}
+.game-title p{
+    color: #534C64;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.single-img p{
+    color: #534C64;
+    text-align: justify;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
 .imag-one{
     position: relative;
 }
@@ -188,15 +218,59 @@ nav{
 .imag-one .port-overly:hover{
     opacity: 1;
 }
+/* paly-game-frem style */
+ .paly-game-frem{
+    padding:30px 90px;
+ }
+ .main-farme{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
 
+ }
+ .main-img{
+    width: 50%;
+ }
+.bigimg-farme{
+    width: 70%;
+}
+ .small-imag{
+    position: absolute;
+    width: 18%;
+    left: 26%;
+    bottom: -8%;
+ }
 
+ .frame-titlt{
+    width: 50%;
+    margin:0 auto;
+ }
+ .frame-titlt h2{
+    color: #534C64;
+    text-align:center;
+    font-family: Work Sans;
+   text-transform: capitalize;
+    font-weight: 800; 
+    margin-bottom: 15px;
+    text-align: justify;
+ }
+
+ .frame-titlt p{
+    color:var(--paimary-color);
+    font-weight: 400;
+    font-size: 1.5rem;
+
+ }
+
+ 
 /* responsive desing  */
 @media screen and (max-width:570px) {
         nav{
             padding:20px;
             text-align: center;
         }
-        .nav-contain{
+        .nav-contain {
             flex-direction: column;
         }
         .menus>ul{
@@ -233,7 +307,45 @@ nav{
        }
        .main-contain-game{
            grid-template-columns: 1fr;
+          margin-top: 20px;
        }
+       .single-img p{
+        font-size: 30px;
+        margin-bottom: 20px;
+       }
+       .paly-game-frem{
+        padding:20px
+       }
+       .main-farme{
+        flex-direction: column-reverse;
+        width: 100%;
+       }
+       .main-img{
+        width: 100%;
+       }
+       .frame-titlt{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+       }
+       .frame-titlt h2{
+        text-align: center;
+       }
+       .frame-titlt p{
+          text-align: center;
+          font-size: 1rem;
+          margin-bottom: 10px;
+       }
+       .bigimg-farme{
+        width: 100%;
+    }
+    .small-imag{
+        position: absolute;
+        left: 42%;
+        bottom: -29%;
+        width: 65%;
+     }
+
 }
 @media screen and (min-width:570px) and (max-width:768px) {
     .nav-contain{
@@ -274,6 +386,43 @@ nav{
     .main-contain-game{
         grid-template-columns: repeat(2,1fr);
     }
+    .paly-game-frem{
+        padding:40px
+       }
+       .main-farme{
+        flex-direction: column-reverse;
+        width: 100%;
+       }
+       .main-img{
+        width: 100%;
+       }
+       .frame-titlt{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+       }
+       .frame-titlt h2{
+        text-align: center;
+       }
+       .frame-titlt p{
+          text-align: center;
+          font-size: 1rem;
+          margin-bottom: 10px;
+       }
+       .small-imag {
+        position: absolute;
+        left: 52%;
+        bottom: -8%;
+        width: 50%;
+    }
+    .bigimg-farme{
+        width: 100%;
+    }
+    .frame-titlt{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
 }
 @media screen and (min-width:768px) and (max-width:990px){
     nav
