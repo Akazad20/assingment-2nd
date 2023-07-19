@@ -422,6 +422,9 @@ nav{
         padding: 8px;
      }
     
+     .single-logo{
+        width: 100%;
+     }
      .main-sponce-game{
         grid-template-columns: repeat(2,1fr);
         gap:5px;
