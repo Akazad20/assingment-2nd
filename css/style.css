@@ -11,6 +11,7 @@ img{
     width: 100%;
   
 }
+
 :root{
     --paimary-color:#3C354F;
     --secondary-color: #FF42A5 ; /* use me 
@@ -262,8 +263,39 @@ nav{
     font-size: 1.5rem;
 
  }
-
- 
+/* game-name title */
+.sponce-logo{
+    padding:90px;
+}
+.main-sponce-game{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 50px;
+}
+ .single-logo{
+     
+     width:200px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   transition: .4s;
+   
+ }
+ .single-logo:hover{
+    color: var(--secondary-color);
+    border: 1px solid red;
+    border-radius: 50px;
+ }
+ .single{
+    padding: 5px;
+ }
+ .titl{
+    font-weight: 500;
+    font-size: 1rem;
+    width: 100%;
+    margin-left: 5px;
+    text-transform: capitalize;
+ }
 /* responsive desing  */
 @media screen and (max-width:570px) {
         nav{
@@ -337,21 +369,32 @@ nav{
           margin-bottom: 10px;
        }
        .bigimg-farme{
-        width: 100%;
+        width: 90%;
     }
     .small-imag{
         position: absolute;
-        left: 42%;
-        bottom: -29%;
-        width: 65%;
+        left:60%;
+        width:35%;
      }
-
+     .sponce-logo{
+        padding: 8px;
+     }
+    
+     .main-sponce-game{
+        grid-template-columns: repeat(2,1fr);
+        gap:5px;
+        margin:50px 0px;
+     }
 }
 @media screen and (min-width:570px) and (max-width:768px) {
     .nav-contain{
         flex-direction:column;
         
     }
+    .sponce-logo{
+        padding: 20px;
+    }
+    
     nav{
           padding: 20px;
     } 
@@ -422,10 +465,17 @@ nav{
         width: 50%;
         margin-bottom: 50px;
     }
+    
+    
+     .main-sponce-game{
+        grid-template-columns: repeat(3,1fr);
+        gap:20px;
+        margin:50px 0px;
+     }
 
 }
 @media screen and (min-width:768px) and (max-width:990px){
-    nav
+    nav,.sponce-logo
     {
         padding: 20px;
     }
@@ -451,5 +501,7 @@ nav{
         margin: 44px auto;
         width: 50%;
      }
-
+     .main-sponce-game{
+        grid-template-columns: repeat(3,1fr);
+     }
     }
